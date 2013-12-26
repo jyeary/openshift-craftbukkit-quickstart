@@ -5,5 +5,5 @@
 #nohup $OPENSHIFT_REPO_DIR/diy/testrubyserver.rb $OPENSHIFT_DIY_IP $OPENSHIFT_REPO_DIR/diy > $OPENSHIFT_DIY_DIR/logs/server.log 2>&1 &
 set -x 
 cd $OPENSHIFT_DATA_DIR
-nohup java -jar craftbukkit-dev.jar -h $OPENSHIFT_DIY_IP > $OPENSHIFT_DIY__LOG_DIR/logs/craftbukkit.log 2>&1 &
+nohup java -jar craftbukkit-dev.jar -h $OPENSHIFT_DIY_IP > $OPENSHIFT_DIY_LOG_DIR/craftbukkit.log 2>&1 &
 
