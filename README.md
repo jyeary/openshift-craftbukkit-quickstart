@@ -58,7 +58,13 @@ You will need at least one player to act as the administrator. In order to do th
    
    ```bash
    $ gear stop
+   Stopping gear...
+   Stopping DIY cartridge
    $ gear start
+   Starting gear...
+   Starting DIY cartridge
+   + cd /var/lib/openshift/52bc4398e0b8cded36000038/app-root/data/
+   + nohup java -jar craftbukkit-dev.jar -h 127.8.212.1 --noconsole
    ```
 
 Reference
