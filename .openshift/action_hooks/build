@@ -1,5 +1,4 @@
 #!/bin/bash
-
 SERVER_PROPERTIES=server.properties
 CRAFTBUKKIT_SERVER_JAR=craftbukkit-dev.jar
 
@@ -11,9 +10,3 @@ if [ ! -e "$CRAFTBUKKIT_SERVER_JAR" ]; then
 	wget "http://dl.bukkit.org/downloads/craftbukkit/get/latest/craftbukkit-dev.jar" -O $CRAFTBUKKIT_SERVER_JAR
 fi
 
-#if [ ! -e $SERVER_PROPERTIES ]; then
-#   cp $OPENSHIFT_REPO_DIR/diy/${SERVER_PROPERTIES} > $SERVER_PROPERTIES
-#fi 
-
-#sed "s/$( grep server-ip server.properties | cut -d\" -f 2 )/${OPENSHIFT_DIY_IP}/g" server.properties > server.properties.temp
-#sed "s/$( grep server-port server.properties.temp | cut -d\" -f 2 )/${OPENSHIFT_DIY_PORT}/g" server.properties.temp > server.properties
