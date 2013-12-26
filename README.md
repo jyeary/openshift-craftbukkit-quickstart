@@ -1,3 +1,7 @@
+openshift-craftbukkit-quickstart
+================================
+
+A quickstart Minecraft (Craftbukkit) server that will automatically download latest craftbukkit and start it.
 This application is designed to run the latest development build of craftbukkit. 
 The OpenShift `diy` cartridge documentation can be found at:
 
