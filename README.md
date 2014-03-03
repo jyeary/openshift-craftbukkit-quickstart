@@ -40,21 +40,21 @@ You will need at least one player to act as the administrator. In order to do th
 1. SSH to the application:
 
    ```bash 
-   $ rhc ssh
+   $ rhc ssh craftbukkit
    ```
 2. Go to the `$OPENSHIFT_DATA_DIR` directory:
    
    ```bash
    $ cd $OPENSHIFT_DATA_DIR
    ```
-3. Add the `minecraft` user names to the *ops.txt* file. I use `nano`, but you can use `vi` if you wish.
-   
+3. Add the `minecraft` user names to the *ops.txt* file. I use `nano`, but you can use `vi` if you wish. The updated file should look like as shown:
+
    ```bash
-   $ nano
    $ cat ops.txt
    syeary
    ```
-4. stop and start the gear. I have found restart does not work very well.
+`syeary` is the minecraft user name.
+4. Stop and start the gear. I have found restart does not work very well.
    
    ```bash
    $ gear stop
@@ -66,6 +66,8 @@ You will need at least one player to act as the administrator. In order to do th
    + cd /var/lib/openshift/52bc4398e0b8cded36000038/app-root/data/
    + nohup java -jar craftbukkit-dev.jar -h 127.8.212.1 --noconsole
    ```
+
+   Minecraft logs are in $OPENSHIFT_DIY_LOG_DIR/server.log.
 
 Reference
 ---
