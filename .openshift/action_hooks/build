@@ -7,7 +7,7 @@ set -x
 cd $OPENSHIFT_DATA_DIR
 
 if [ ! -e "$BUILDTOOLS_JAR" ]; then
-	wget -O BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar $BUILDTOOLS_JAR
+	wget -O https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar $BUILDTOOLS_JAR
 	java -jar $BUILDTOOLS_JAR
 fi
 
