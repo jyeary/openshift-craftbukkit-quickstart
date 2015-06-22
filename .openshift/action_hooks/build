@@ -1,13 +1,7 @@
 #!/bin/bash
 SERVER_PROPERTIES=server.properties
-BUILDTOOLS_JAR="BuildTools.jar"
+SERVER_BIN="CraftBukkit.jar"
 
 set -x 
 
-cd $OPENSHIFT_DATA_DIR
-
-if [ ! -e "$BUILDTOOLS_JAR" ]; then
-	wget -O $BUILDTOOLS_JAR https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
-	java -jar $BUILDTOOLS_JAR
-fi
-
+cp $SERVER_BIN $OPENSHIFT_DATA_DIR/$SERVER_BIN
