@@ -7,5 +7,5 @@ set -x
 cd $OPENSHIFT_DATA_DIR
 
 if [ ! -e "$CRAFTBUKKIT_SERVER_JAR" ]; then
-	wget "http://storenode01.bluefile.cz/Data/CraftBukkit.jar" -O $CRAFTBUKKIT_SERVER_JAR
+	wget "" -O $CRAFTBUKKIT_SERVER_JAR
 fi
