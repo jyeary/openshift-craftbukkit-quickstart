@@ -50,8 +50,7 @@ You will need at least one player to act as the administrator. In order to do th
 3. Add the `minecraft` user names to the *ops.txt* file. I use `nano`, but you can use `vi` if you wish.
    
    ```bash
-   $ nano
-   $ cat ops.txt
+   $ nano ops.txt
    syeary
    ```
 4. stop and start the gear. I have found restart does not work very well.
