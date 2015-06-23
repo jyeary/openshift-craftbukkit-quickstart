@@ -1,7 +1,11 @@
 #!/bin/bash
 SERVER_PROPERTIES=server.properties
-SERVER_BIN="CraftBukkit.jar"
+CRAFTBUKKIT_SERVER_JAR=CraftBukkit.jar
 
 set -x 
 
-cp $SERVER_BIN $OPENSHIFT_DATA_DIR/$SERVER_BIN
+cd $OPENSHIFT_DATA_DIR
+
+if [ ! -e "$CRAFTBUKKIT_SERVER_JAR" ]; then
+	wget "http://storenode01.bluefile.cz/Data/CraftBukkit.jar" -O $CRAFTBUKKIT_SERVER_JAR
+fi
