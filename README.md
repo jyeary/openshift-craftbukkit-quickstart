@@ -35,30 +35,29 @@ Create the Openshift DIY Application
 Setting Administrative Player (Op)
 ---
 
-You will need at least one player to act as the administrator. In order to do that, you must add them to the *ops.txt* file.
+You will need at least one player to act as the administrator. In order to do that, you must add them through server console.
 
 1. SSH to the application:
 
    ```bash 
    $ rhc ssh
    ```
-2. Go to the `$OPENSHIFT_DATA_DIR` directory:
-   
-   ```bash
-   $ cd $OPENSHIFT_DATA_DIR
-   ```
-3. Add the `minecraft` user names to the *ops.txt* file. I use `nano`, but you can use `vi` if you wish.
-   
-   ```bash
-   $ nano ops.txt
-   syeary
-   ```
-4. stop and start the gear. I have found restart does not work very well.
+2. Stop gear, go to openshift data dir and run server:
    
    ```bash
    $ gear stop
-   Stopping gear...
-   Stopping DIY cartridge
+   $ cd $OPENSHIFT_DATA_DIR
+   $ java -jar CraftBukkit.jar
+   ```
+3. In server console op someone.
+   
+   ```bash
+   > op <player>
+   ```
+4. Stop server and start the gear.
+   
+   ```bash
+   > stop
    $ gear start
    Starting gear...
    Starting DIY cartridge
