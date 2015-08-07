@@ -1,5 +1,5 @@
 #!/bin/bash
 set -x 
 cd $OPENSHIFT_DATA_DIR
-nohup java -jar craftbukkit-dev.jar -h $OPENSHIFT_DIY_IP --noconsole > $OPENSHIFT_DIY_LOG_DIR/server.log 2>&1 &
+nohup java -jar craftbukkit.jar -h $OPENSHIFT_DIY_IP --noconsole > $OPENSHIFT_DIY_LOG_DIR/server.log 2>&1 &
 
