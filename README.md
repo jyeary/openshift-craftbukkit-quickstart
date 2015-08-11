@@ -1,9 +1,6 @@
 Openshift Bukkit
 ================================
 
-Based off of this guide: http://blog.arungupta.me/free-minecraft-server-hosting-on-openshift/ 
-I forked it because it was obsolete and wanted to fix it
-
 A quickstart Minecraft (Craftbukkit) server that will automatically download latest craftbukkit development build 
 and start it.
 
