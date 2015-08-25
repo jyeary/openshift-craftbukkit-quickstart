@@ -1,6 +1,9 @@
 Openshift Bukkit
 ================================
 
+[![License](https://img.shields.io/badge/license-APACHE%202.0-blue.svg)](https://github.com/mhsjlw/drop/blob/master/LICENSE)
+[![Gratipay](https://img.shields.io/gratipay/mhsjlw.svg)](https://gratipay.com/~mhsjlw/)
+
 A quickstart Minecraft (Craftbukkit) server that will automatically download latest craftbukkit development build 
 and start it.
 
