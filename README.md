@@ -1,5 +1,8 @@
-openshift-craftbukkit-quickstart
+Openshift Bukkit
 ================================
+
+[![License](https://img.shields.io/badge/license-APACHE%202.0-blue.svg)](https://github.com/mhsjlw/drop/blob/master/LICENSE)
+[![Gratipay](https://img.shields.io/gratipay/mhsjlw.svg)](https://gratipay.com/~mhsjlw/)
 
 A quickstart Minecraft (Craftbukkit) server that will automatically download latest craftbukkit development build 
 and start it.
@@ -10,7 +13,7 @@ Create the Openshift DIY Application
 1. Create a DIY application using this git repo as source code:
 
    ```bash
-   $ rhc app-create craftbukkit diy --from-code=git://github.com/jyeary/openshift-craftbukkit-quickstart.git
+   $ rhc app-create craftbukkit diy --from-code=git://github.com/mhsjlw/openshift-bukkit.git
    ```
 
 2. Create a port-forward from your local machine to your remote server:
