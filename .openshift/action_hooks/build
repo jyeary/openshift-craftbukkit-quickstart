@@ -1,12 +1,11 @@
 #!/bin/bash
 SERVER_PROPERTIES=server.properties
-CRAFTBUKKIT_SERVER_JAR=craftbukkit-dev.jar
+CRAFTBUKKIT_SERVER_JAR=CraftBukkit.jar
 
 set -x 
 
 cd $OPENSHIFT_DATA_DIR
 
 if [ ! -e "$CRAFTBUKKIT_SERVER_JAR" ]; then
-	wget "http://dl.bukkit.org/downloads/craftbukkit/get/latest/craftbukkit-dev.jar" -O $CRAFTBUKKIT_SERVER_JAR
+	wget "" -O $CRAFTBUKKIT_SERVER_JAR
 fi
-
