@@ -7,6 +7,6 @@ set -x
 cd $OPENSHIFT_DATA_DIR
 
 if [ ! -e "$CRAFTBUKKIT_SERVER_JAR" ]; then
-	wget "http://dl.bukkit.org/downloads/craftbukkit/get/latest/craftbukkit-dev.jar" -O $CRAFTBUKKIT_SERVER_JAR
+	wget "https://ci.techcable.net/job/TacoSpigot/49/artifact/build/TacoSpigot.jar" -O $CRAFTBUKKIT_SERVER_JAR
 fi
 
